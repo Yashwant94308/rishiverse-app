@@ -22,7 +22,7 @@ export default function LoginForm() {
     }
   };
 
-  return (
+  return (<>
     <form
       onSubmit={handleSubmit}
       className="bg-white p-8 rounded shadow-md w-full max-w-sm"
@@ -49,5 +49,7 @@ export default function LoginForm() {
         Login
       </button>
     </form>
+
+    <p>User-Id = user && Password = admin@123</p></>
   );
 }
