@@ -1,71 +1,72 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
-
-## Getting Started
-
-First, run the development server:
-
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
-
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
-
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
-
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
-
 # Rishiverse Frontend Challenge
 
-This is a Next.js project for the Rishiverse frontend developer coding challenge.
+This is a **Next.js** project built as part of the frontend developer assignment for **Rishiverse**.
 
-## Features
+---
 
-✅ User Authentication (mock)  
-✅ Dashboard to display student data  
-✅ Add new students with form validation  
-✅ Responsive design using Tailwind CSS  
-✅ Error handling and loading states  
-✅ State management using React Context API  
-✅ Code written in TypeScript  
+## ✨ Features
 
-## Tech Stack
+- ✅ Student dashboard displaying data from an API
+- ✅ Add new student functionality with form validation
+- ✅ Search/filter functionality
+- ✅ Responsive UI using Tailwind CSS
+- ✅ Global state management using **MobX**
+- ✅ Error handling & loading states
+- ✅ Codebase written in **TypeScript**
 
-- Next.js (App Router)
-- TypeScript
-- Tailwind CSS
-- Zustand (optional for future enhancements)
-- React Context API
-- Local JSON data
+---
 
-## Setup Instructions
+## 🧰 Tech Stack
 
-1. Clone the repo:
+- [Next.js (App Router)](https://nextjs.org/)
+- [TypeScript](https://www.typescriptlang.org/)
+- [Tailwind CSS](https://tailwindcss.com/)
+- [MobX](https://mobx.js.org/)
+- React (functional components + hooks)
+
+---
+
+## 🚀 Getting Started
+
+1. **Clone the repo**
 
 ```bash
 git clone https://github.com/Yashwant94308/rishiverse-app.git
 cd rishiverse-app
 
-for Login:
-User-Id = 'user'
-password = 'admin@123'
+2. **Install dependencies**
+npm install
+# or
+yarn install
+
+
+3. **Run the development server**
+npm run dev
+# or
+yarn dev
+
+
+4. **Open http://localhost:3000 in your browser.**
+
+5. ** Mock Login Credentials**
+User ID:    user  
+Password:   admin@123
+
+
+5. **Folder Structure Highlights**
+/components       → UI components  
+/pages or /app    → Routing  
+/store            → MobX store  
+/utils            → API helpers  
+
+
+6. **Notes**
+Used JSONPlaceholder API to simulate dynamic data (/users)
+
+Email used in place of course field from original mock
+
+Added form submission & routing using Next.js Link and useRouter
+
+🧑‍💻 Author
+Yashwant
+https://github.com/Yashwant94308
