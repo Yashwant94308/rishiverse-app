@@ -34,3 +34,34 @@ You can check out [the Next.js GitHub repository](https://github.com/vercel/next
 The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
 Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+
+# Rishiverse Frontend Challenge
+
+This is a Next.js project for the Rishiverse frontend developer coding challenge.
+
+## Features
+
+✅ User Authentication (mock)  
+✅ Dashboard to display student data  
+✅ Add new students with form validation  
+✅ Responsive design using Tailwind CSS  
+✅ Error handling and loading states  
+✅ State management using React Context API  
+✅ Code written in TypeScript  
+
+## Tech Stack
+
+- Next.js (App Router)
+- TypeScript
+- Tailwind CSS
+- Zustand (optional for future enhancements)
+- React Context API
+- Local JSON data
+
+## Setup Instructions
+
+1. Clone the repo:
+
+```bash
+git clone https://github.com/your-username/rishiverse-app.git
+cd rishiverse-app
