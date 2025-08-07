@@ -65,3 +65,7 @@ This is a Next.js project for the Rishiverse frontend developer coding challenge
 ```bash
 git clone https://github.com/Yashwant94308/rishiverse-app.git
 cd rishiverse-app
+
+for Login:
+User-Id = 'user'
+password = 'admin@123'
