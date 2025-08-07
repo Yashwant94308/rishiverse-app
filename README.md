@@ -63,5 +63,5 @@ This is a Next.js project for the Rishiverse frontend developer coding challenge
 1. Clone the repo:
 
 ```bash
-git clone https://github.com/your-username/rishiverse-app.git
+git clone https://github.com/Yashwant94308/rishiverse-app.git
 cd rishiverse-app
