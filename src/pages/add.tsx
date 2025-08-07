@@ -1,23 +1,31 @@
 'use client';
+
 import { useState } from 'react';
 import { useRouter } from 'next/router';
 import MainLayout from '@/components/Layout/MainLayout';
+import { studentStore } from '@/store/StudentStore'; 
 
 export default function AddPage() {
   const [name, setName] = useState('');
-  const [course, setCourse] = useState('');
+  const [email, setEmail] = useState('');
   const [error, setError] = useState('');
   const router = useRouter();
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    if (!name || !course) {
+
+    if (!name.trim() || !email.trim()) {
       setError('Both fields are required');
       return;
     }
 
-    // Simulate a post request (would go to an API or state)
-    console.log('Submitted:', { name, course });
+    const newStudent = {
+      id: Date.now(), 
+      name: name.trim(),
+      email: email.trim(),
+    };
+
+    studentStore.addStudent(newStudent);
 
     router.push('/dashboard');
   };
@@ -34,9 +42,9 @@ export default function AddPage() {
         />
         <input
           className="border p-2 w-full"
-          placeholder="Course"
-          value={course}
-          onChange={(e) => setCourse(e.target.value)}
+          placeholder="Student-Email"
+          value={email}
+          onChange={(e) => setEmail(e.target.value)}
         />
         {error && <p className="text-red-600">{error}</p>}
         <button type="submit" className="bg-blue-600 text-white px-4 py-2 rounded">

@@ -1,3 +1,5 @@
+'use client';
+
 import MainLayout from '@/components/Layout/MainLayout';
 import StudentList from '@/components/Dashboard/StudentList';
 import Link from 'next/link';
